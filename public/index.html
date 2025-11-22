@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Video Group Call — Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Nếu bạn muốn icon, uncomment fontawesome -->
+  <!-- <script src="https://kit.fontawesome.com/xxxxxxxx.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Video Call — Nhóm & Trình chiếu</h1>
+    </header>
+
+    <section class="connection card">
+      <div class="row">
+        <label for="roomId">Tên phòng / Room ID</label>
+        <input id="roomId" placeholder="vd: math101" />
+        <button id="joinBtn" class="primary">Tham gia Phòng</button>
+        <button id="leaveBtn" class="danger" disabled>Rời khỏi</button>
+      </div>
+      <div class="row small">
+        <span>Trạng thái: <b id="connStatus">Offline</b></span>
+        <span>ID cục bộ: <b id="localId">—</b></span>
+      </div>
+    </section>
+
+    <section class="video-area card">
+      <div id="videos" class="video-grid">
+        <!-- video elements will be appended here -->
+      </div>
+    </section>
+
+    <section class="controls card">
+      <button id="toggleAudio">🎤 Tắt Mic</button>
+      <button id="toggleVideo">📷 Tắt Camera</button>
+      <button id="shareScreen">🖥️ Chia sẻ màn hình</button>
+      <button id="stopShare" disabled>⛔ Dừng chia sẻ</button>
+      <button id="leaveBtn2" class="danger" disabled>Rời khỏi Phòng</button>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
